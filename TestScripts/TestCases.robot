@@ -4,6 +4,7 @@
 *** Settings ***
 Resource          ../Resources/Common.robot
 Library            SeleniumLibrary
+
 Suite Setup       Setup Browser
 Suite Teardown    End suite
 
@@ -21,7 +22,7 @@ Entering a Contacts
     TypeText      First Name                  tara srinivas17
     TypeText      Last Name                   chandika
     ComboBox      Search Accounts...          Greenwich Media
-    InputText      //*[@id\="input-347"]       xpath@gmail.com
+    Type Text      //*[@id\="input-347"]       xpath@gmail.com
     TypeText      Title                       project17
     TypeText      Mailing Street              hanuman nagar 4th line
     TypeText      Mailing City                guntur
