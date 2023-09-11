@@ -17,13 +17,13 @@ Entering a Contacts
     UseModal         On
     TypeText         Phone                       +917396647548
     Picklist         Salutation                  Mr.
-    TypeText         First Name                  tara srinivas21
+    TypeText         First Name                  tara srinivas24
     TypeText         Last Name                   chandika
     ComboBox         Search Accounts...          Greenwich Media
-    TypeText         Mobile                      +919922774482
+    TypeText         Mobile                      +919922774488
     # ${value}=      GetInputValue               //*[@id\="input-347"]
     TypeText         //*[@name\="Email"]         xpath789@gmail.com
-    TypeText         Title                       project21
+    TypeText         Title                       project24
     TypeText         Mailing Street              hanuman nagar 4th line
     TypeText         Mailing City                guntur
     TypeText         Mailing State/Province      ap
