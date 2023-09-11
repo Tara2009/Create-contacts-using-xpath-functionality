@@ -22,7 +22,7 @@ Entering a Contacts
     ComboBox         Search Accounts...          Greenwich Media
     TypeText         Mobile                      +919922774482
     # ${value}=      GetInputValue               //*[@id\="input-347"]
-    TypeText         //*[@name\="Email"]         xpath456@gmail.com
+    TypeText         //*[@name\="Email"]         xpath789@gmail.com
     TypeText         Title                       project21
     TypeText         Mailing Street              hanuman nagar 4th line
     TypeText         Mailing City                guntur
@@ -51,5 +51,5 @@ Entering a Contacts
     ClickText        Save                        partial_match=False
     UseModal         Off
     ClickText        Details
-    VerifyElement    Email
+    VerifyText       Email                       xpath789@gmail.com
     # End creation of contacts
