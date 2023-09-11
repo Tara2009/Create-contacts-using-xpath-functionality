@@ -25,7 +25,8 @@ Entering a Contacts
     TypeText      First Name                  tara srinivas17
     TypeText      Last Name                   chandika
     ComboBox      Search Accounts...          Greenwich Media
-    TypeElement     //*[@id="input-347"]        xpath@gmail.com        anchor=1     
+    ${value}      GetInputValue               //*[@id="input-347"]
+    TypeText      ${value}                    xpath@gmail.com
     TypeText      Title                       project17
     TypeText      Mailing Street              hanuman nagar 4th line
     TypeText      Mailing City                guntur
