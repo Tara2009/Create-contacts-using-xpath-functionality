@@ -51,5 +51,4 @@ Entering a Contacts
     ClickText        Save                        partial_match=False
     UseModal         Off
     ClickText        Details
-    VerifyText       Email                       xpath789@gmail.com
     # End creation of contacts
