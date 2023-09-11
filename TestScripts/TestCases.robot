@@ -2,59 +2,54 @@
 # before running this suite.
 
 *** Settings ***
-Resource          ../Resources/Common.robot
-Library           SeleniumLibrary
-Library           QForce
-Library           QMobile
-Library           QNow
-Library           QVision
-Suite Setup       Setup Browser
-Suite Teardown    End suite
+Resource                 ../Resources/Common.robot
+Suite Setup              Setup Browser
+Suite Teardown           End suite
 
 
 *** Test Cases ***
 Entering a Contacts
-    [Tags]        Contact
-    Appstate      Home
-    LaunchApp     Sales
-    ClickText     Contacts
-    ClickUntil    New Contact                 New
-    UseModal      On
-    TypeText      Phone                       +917396647548
-    Picklist      Salutation                  Mr.
-    TypeText      First Name                  tara srinivas17
-    TypeText      Last Name                   chandika
-    ComboBox      Search Accounts...          Greenwich Media
-    TypeText      Mobile                      +919922774482
-    # ${value}=                               GetInputValue               //*[@id\="input-347"]
-    TypeText      //*[@name\="Email"]          xpath@gmail.com
-    TypeText      Title                       project17
-    TypeText      Mailing Street              hanuman nagar 4th line
-    TypeText      Mailing City                guntur
-    TypeText      Mailing State/Province      ap
-    TypeText      Mailing Zip/Postal Code     522006
-    TypeText      Mailing Country             india
-    TypeText      Other Street                vijayapuri colony
-    TypeText      Other City                  guntur
-    TypeText      Other State/Province        ap
-    TypeText      Other Zip/Postal Code       52206
-    TypeText      Other Country               india
-    TypeText      Fax                         7396647548
-    PickList      Lead Source                 Web
-    TypeText      Home Phone                  8987
-    ClickText     Birthdate                   anchor=Home Phone
-    DropDown      Pick a Year                 1979
-    ClickText     Previous                    Month
-    ClickText     Previous                    Month
-    ClickText     Previous                    Month
-    ClickText     20
-    TypeText      Other Phone                 987946
-    TypeText      Department                  testing department
-    TypeText      Assistant                   no assistant
-    TypeText      Asst. Phone                 00000034
-    TypeText      Description                 learning copado robotic testing
-    ClickText     Save                        partial_match=False
-    UseModal      Off
-    ClickText     Details
-
+    [Tags]               Contact
+    Appstate             Home
+    LaunchApp            Sales
+    ClickText            Contacts
+    ClickUntil           New Contact                 New
+    UseModal             On
+    TypeText             Phone                       +917396647548
+    Picklist             Salutation                  Mr.
+    TypeText             First Name                  tara srinivas18
+    TypeText             Last Name                   chandika
+    ComboBox             Search Accounts...          Greenwich Media
+    TypeText             Mobile                      +919922774482
+    # ${value}=          GetInputValue               //*[@id\="input-347"]
+    TypeText             //*[@name\="Email"]         xpath123@gmail.com
+    TypeText             Title                       project18
+    TypeText             Mailing Street              hanuman nagar 4th line
+    TypeText             Mailing City                guntur
+    TypeText             Mailing State/Province      ap
+    TypeText             Mailing Zip/Postal Code     522006
+    TypeText             Mailing Country             india
+    TypeText             Other Street                vijayapuri colony
+    TypeText             Other City                  guntur
+    TypeText             Other State/Province        ap
+    TypeText             Other Zip/Postal Code       52206
+    TypeText             Other Country               india
+    TypeText             Fax                         7396647548
+    PickList             Lead Source                 Web
+    TypeText             Home Phone                  8987
+    ClickText            Birthdate                   anchor=Home Phone
+    DropDown             Pick a Year                 1979
+    ClickText            Previous                    Month
+    ClickText            Previous                    Month
+    ClickText            Previous                    Month
+    ClickText            20
+    TypeText             Other Phone                 987946
+    TypeText             Department                  testing department
+    TypeText             Assistant                   no assistant
+    TypeText             Asst. Phone                 00000034
+    TypeText             Description                 learning copado robotic testing
+    ClickText            Save                        partial_match=False
+    UseModal             Off
+    ClickText            Details
+    VerifyElementText    //*[@name\="Email"]         xpath123@gmail.com
     # End creation of contacts
