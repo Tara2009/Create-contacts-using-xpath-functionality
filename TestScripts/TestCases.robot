@@ -15,13 +15,13 @@ Entering a Contacts
     ClickText              Contacts
     ClickUntil             New Contact                 New
     UseModal               On
-    TypeText               Phone                       +917398867459
+    TypeText               Phone                       +917396647548
     Picklist               Salutation                  Mr.
-    TypeText               First Name                  tara srinivas16
+    TypeText               First Name                  tara srinivas17
     TypeText               Last Name                   chandika
-    ComboBox               Search Accounts...          GenePoint
+    ComboBox               Search Accounts...          Greenwich Media
     TypeText               Email                       tvsh@gmail.com
-    TypeText               Title                       project16
+    TypeText               Title                       project17
     TypeText               Mailing Street              hanuman nagar 4th line
     TypeText               Mailing City                guntur
     TypeText               Mailing State/Province      ap
@@ -32,7 +32,7 @@ Entering a Contacts
     TypeText               Other State/Province        ap
     TypeText               Other Zip/Postal Code       52206
     TypeText               Other Country               india
-    TypeText               Fax                         7398878560
+    TypeText               Fax                         7396647548
     PickList               Lead Source                 Web
     TypeText               Home Phone                  8987
     ClickText              Birthdate                   anchor=Home Phone
