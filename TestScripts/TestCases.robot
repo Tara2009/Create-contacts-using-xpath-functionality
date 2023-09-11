@@ -25,6 +25,7 @@ Entering a Contacts
     TypeText      First Name                  tara srinivas17
     TypeText      Last Name                   chandika
     ComboBox      Search Accounts...          Greenwich Media
+    TypeText      Mobile                      +919922774482
     # ${value}=                               GetInputValue               //*[@id\="input-347"]
     TypeText      //*[@name\="Email"]          xpath@gmail.com
     TypeText      Title                       project17
